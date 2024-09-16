@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+    tutor-front:
+        image: xela146/tutor-front:latest
+        ports:
+            - "19000:19000"
+            - "19001:19001"
+            - "19002:19002"
+            - "19006:19006"
+
+    tutor-back:
+        image: xela146/tutor-back:latest
+        ports:
+            - "3000:3000"
